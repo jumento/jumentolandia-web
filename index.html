@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumentolandia | Agencia de Innovación Narrativa</title>
+    <meta name="description"
+        content="Jumentolandia fusiona marketing político, storytelling de marca y desarrollo interactivo.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-blur">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <span class="text-primary-gradient">JUMENTOLANDIA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Áreas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#values">Valores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button id="theme-toggle" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center min-vh-100 position-relative overflow-hidden">
+        <div class="hero-bg-animation"></div>
+        <!-- Particles Container -->
+        <div id="particles-js"></div>
+
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="badge bg-primary-gradient rounded-pill mb-3 px-3 py-2 shadow-sm">
+                        <i class="fas fa-gamepad me-2"></i> Press Start to Innovate
+                    </span>
+                    <h1 class="display-1 fw-black mb-4 lh-1">
+                        Jugamos con las <span class="text-gradient">ideas</span>,<br>
+                        ganamos con las <span class="text-gradient">historias</span>.
+                    </h1>
+                    <p class="lead mb-5 text-secondary-highlight fs-3">
+                        Fusionamos la <strong>estrategia política</strong> con la adrenalina de los
+                        <strong>videojuegos</strong> para crear narrativas que no solo se cuentan, se <em>viven</em>.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#services" class="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-bold glow-effect">
+                            Iniciar Partida <i class="fas fa-play ms-2"></i>
+                        </a>
+                        <a href="#about" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3 fw-bold">
+                            Conocer el Lore
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-100 position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="position-relative">
+                        <div class="card bg-dark-glass border-0 p-5 shadow-lg">
+                            <h2 class="h1 fw-bold mb-4 text-gradient">El Nuevo Juego del Poder</h2>
+                            <p class="fs-5 text-muted-light mb-4">
+                                Jumentolandia no es una agencia tradicional. Somos un <strong>laboratorio de innovación
+                                    narrativa</strong>. Entendemos que en la era digital, la atención es la moneda más
+                                valiosa y la interacción es el rey.
+                            </p>
+                            <p class="fs-5 text-muted-light">
+                                Desde <strong>Monterrey</strong> para toda Latinoamérica, hackeamos la comunicación
+                                política y de marca combinando <strong>psicología del comportamiento</strong>,
+                                <strong>gamificación</strong> y <strong>estrategia de alto nivel</strong>.
+                            </p>
+                            <div class="mt-4 d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3 fa-2x"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Base de Operaciones</h6>
+                                    <small class="text-muted">Monterrey</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Decorative Elements -->
+                        <div class="position-absolute top-0 start-50 translate-middle">
+                            <i class="fas fa-chess-knight fa-4x text-white opacity-10"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 bg-dark-glass border-0 p-4 hover-lift text-center">
+                                <div class="icon-circle mx-auto mb-3 bg-primary-gradient text-white">
+                                    <i class="fas fa-crosshairs fa-2x"></i>
+                                </div>
+                                <h3 class="h4 fw-bold">Misión</h3>
+                                <p class="small text-muted-light">Reimaginar la comunicación. No buscamos espectadores,
+                                    creamos <strong>jugadores</strong> activos en tu narrativa.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 bg-dark-glass border-0 p-4 hover-lift text-center">
+                                <div class="icon-circle mx-auto mb-3 bg-secondary-gradient text-white">
+                                    <i class="fas fa-vr-cardboard fa-2x"></i>
+                                </div>
+                                <h3 class="h4 fw-bold">Visión</h3>
+                                <p class="small text-muted-light">Ser el <strong>Boss Final</strong> de la comunicación
+                                    estratégica y el entretenimiento interactivo en Latam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Areas Section -->
+    <section id="services" class="py-100 bg-alt overflow-hidden">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="text-primary fw-bold text-uppercase letter-spacing-2">Nuestras Armas</span>
+                <h2 class="display-4 fw-bold mt-2">Áreas de Dominio</h2>
+                <p class="lead text-muted-light">Estrategias diseñadas para ganar la partida</p>
+            </div>
+            <div class="row g-4">
+                <!-- Area 1 -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card h-100 border-0 p-2">
+                        <div class="card-body p-4">
+                            <div class="icon-box mb-4 bg-soft-primary text-primary">
+                                <i class="fas fa-bullhorn fa-2x"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Comunicación Política 2.0</h3>
+                            <p class="text-muted-light mb-4">
+                                Olvida los discursos aburridos. Diseñamos narrativas de posicionamiento que conectan con
+                                las nuevas generaciones sin perder credibilidad.
+                            </p>
+                            <ul class="list-unstyled small text-muted-light">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Estrategia Digital</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Gestión de Crisis</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Movilización Online</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Area 2 -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card h-100 border-0 p-2">
+                        <div class="card-body p-4">
+                            <div class="icon-box mb-4 bg-soft-secondary ">
+                                <i class="fas fa-book-open fa-2x"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Storytelling & Branding</h3>
+                            <p class="text-muted-light mb-4">
+                                Creamos universos, no solo logos. Desarrollamos experiencias que fortalecen el vínculo
+                                emocional entre tu marca y tu audiencia.
+                            </p>
+                            <ul class="list-unstyled small text-muted-light">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Narrativa Transmedia</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Identidad Visual</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Contenido Viral</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Area 3 -->
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card h-100 border-0 p-2">
+                        <div class="card-body p-4">
+                            <div class="icon-box mb-4 bg-soft-accent text-accent">
+                                <i class="fas fa-gamepad fa-2x"></i>
+                            </div>
+                            <h3 class="h4 fw-bold mb-3">Incubadora de Videojuegos</h3>
+                            <p class="text-muted-light mb-4">
+                                Entretenimiento con propósito. Producimos videojuegos que integran identidad cultural y
+                                mensajes sociales potentes.
+                            </p>
+                            <ul class="list-unstyled small text-muted-light">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Gamificación</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Desarrollo Indie</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Narrativa Interactiva</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="py-100 position-relative overflow-hidden">
+        <div class="container position-relative z-2">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-4 fw-bold">Código Fuente (Valores)</h2>
+                        <p class="lead text-muted-light">Los pilares que sostienen nuestra arquitectura</p>
+                    </div>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="value-card text-center p-4 h-100">
+                                <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                                <h5 class="fw-bold">Pensamiento Independiente</h5>
+                                <p class="small text-muted-light">Estrategia sin ataduras.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="value-card text-center p-4 h-100">
+                                <i class="fas fa-lightbulb fa-3x text-warning mb-3"></i>
+                                <h5 class="fw-bold">Creatividad con Propósito</h5>
+                                <p class="small text-muted-light">Ideas que impactan.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="value-card text-center p-4 h-100">
+                                <i class="fas fa-microchip fa-3x text-info mb-3"></i>
+                                <h5 class="fw-bold">Cultura y Tecnología</h5>
+                                <p class="small text-muted-light">Al servicio del mensaje.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="value-card text-center p-4 h-100">
+                                <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+                                <h5 class="fw-bold">Rigor Analítico</h5>
+                                <p class="small text-muted-light">Datos, no suposiciones.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="value-card text-center p-4 h-100">
+                                <i class="fas fa-users fa-3x text-danger mb-3"></i>
+                                <h5 class="fw-bold">Colaboración</h5>
+                                <p class="small text-muted-light">Multidisciplinaria y ágil.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-100">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="text-primary fw-bold text-uppercase letter-spacing-2">Portafolio</span>
+                <h2 class="display-4 fw-bold mt-2">Proyectos Destacados</h2>
+                <p class="lead text-muted-light">Explora nuestras últimas creaciones interactivas</p>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper projects-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="card-header-type">
+                                <span class="project-name">Cyber Ballot 2077</span>
+                                <span class="project-hp text-danger">HP 120</span>
+                            </div>
+                            <div class="card-image-container">
+                                <img src="https://placehold.co/600x400/1a1a2e/e94560?text=Cyber+Ballot"
+                                    alt="Cyber Ballot" class="img-fluid">
+                            </div>
+                            <div class="card-description-box custom-scroll">
+                                <p class="fw-bold mb-1">Simulador Político</p>
+                                <p class="small">Un juego de estrategia donde gestionas una campaña electoral en un
+                                    futuro distópico. Utiliza big data, manipulación de medios y alianzas oscuras para
+                                    ganar la presidencia. Cada decisión afecta tu popularidad y recursos.</p>
+                                <p class="small mt-2">Tecnologías: Unity, C#, AI Behavior Trees.</p>
+                            </div>
+                            <div class="card-footer-stats">
+                                <div class="weakness">
+                                    <small>Plataforma</small>
+                                    <i class="fab fa-steam"></i>
+                                </div>
+                                <div class="resistance">
+                                    <small>Estado</small>
+                                    <span class="badge bg-success">Live</span>
+                                </div>
+                                <div class="retreat">
+                                    <a href="#" class="text-light"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="card-header-type">
+                                <span class="project-name">Echoes of Mty</span>
+                                <span class="project-hp text-primary">HP 90</span>
+                            </div>
+                            <div class="card-image-container">
+                                <img src="https://placehold.co/600x400/0f3460/00d2fc?text=Echoes+Mty"
+                                    alt="Echoes of Mty" class="img-fluid">
+                            </div>
+                            <div class="card-description-box custom-scroll">
+                                <p class="fw-bold mb-1">Narrativa AR</p>
+                                <p class="small">Experiencia de realidad aumentada que revela historias ocultas de
+                                    Monterrey. Apunta tu teléfono a edificios históricos para ver recreaciones del
+                                    pasado y escuchar testimonios olvidados. Una nueva forma de turismo cultural.</p>
+                                <p class="small mt-2">Tecnologías: ARCore, Mapbox, React Native.</p>
+                            </div>
+                            <div class="card-footer-stats">
+                                <div class="weakness">
+                                    <small>Plataforma</small>
+                                    <i class="fab fa-android"></i> <i class="fab fa-apple"></i>
+                                </div>
+                                <div class="resistance">
+                                    <small>Estado</small>
+                                    <span class="badge bg-warning text-dark">Beta</span>
+                                </div>
+                                <div class="retreat">
+                                    <a href="#" class="text-light"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="card-header-type">
+                                <span class="project-name">Neural Debate</span>
+                                <span class="project-hp text-warning">HP 150</span>
+                            </div>
+                            <div class="card-image-container">
+                                <img src="https://placehold.co/600x400/53354a/f6b93b?text=Neural+Debate"
+                                    alt="Neural Debate" class="img-fluid">
+                            </div>
+                            <div class="card-description-box custom-scroll">
+                                <p class="fw-bold mb-1">Serious Game</p>
+                                <p class="small">Entrena tus habilidades de argumentación contra una IA entrenada con
+                                    miles de debates políticos. Aprende a identificar falacias lógicas y a construir
+                                    argumentos sólidos en tiempo real. Herramienta educativa para universidades.</p>
+                                <p class="small mt-2">Tecnologías: OpenAI API, WebGL, Vue.js.</p>
+                            </div>
+                            <div class="card-footer-stats">
+                                <div class="weakness">
+                                    <small>Plataforma</small>
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="resistance">
+                                    <small>Estado</small>
+                                    <span class="badge bg-info text-dark">Demo</span>
+                                </div>
+                                <div class="retreat">
+                                    <a href="#" class="text-light"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="card-header-type">
+                                <span class="project-name">Civic Heroes</span>
+                                <span class="project-hp text-success">HP 110</span>
+                            </div>
+                            <div class="card-image-container">
+                                <img src="https://placehold.co/600x400/2c3e50/2ecc71?text=Civic+Heroes"
+                                    alt="Civic Heroes" class="img-fluid">
+                            </div>
+                            <div class="card-description-box custom-scroll">
+                                <p class="fw-bold mb-1">Gamificación Social</p>
+                                <p class="small">Plataforma que recompensa a los ciudadanos por reportar problemas
+                                    urbanos y participar en voluntariados. Sube de nivel, gana medallas y canjea puntos
+                                    por descuentos en servicios locales. Fomentando la participación ciudadana.</p>
+                                <p class="small mt-2">Tecnologías: Flutter, Firebase, Google Maps.</p>
+                            </div>
+                            <div class="card-footer-stats">
+                                <div class="weakness">
+                                    <small>Plataforma</small>
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="resistance">
+                                    <small>Estado</small>
+                                    <span class="badge bg-success">Live</span>
+                                </div>
+                                <div class="retreat">
+                                    <a href="#" class="text-light"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="swiper-slide">
+                        <div class="project-card">
+                            <div class="card-header-type">
+                                <span class="project-name">Mythos Brand</span>
+                                <span class="project-hp text-info">HP 80</span>
+                            </div>
+                            <div class="card-image-container">
+                                <img src="https://placehold.co/600x400/4a69bd/82ccdd?text=Mythos+Brand"
+                                    alt="Mythos Brand" class="img-fluid">
+                            </div>
+                            <div class="card-description-box custom-scroll">
+                                <p class="fw-bold mb-1">Branding Interactivo</p>
+                                <p class="small">Sitio web inmersivo para una marca de ropa urbana. Navega por un mundo
+                                    3D para descubrir las colecciones, personaliza tu avatar y desbloquea descuentos
+                                    exclusivos encontrando easter eggs ocultos.</p>
+                                <p class="small mt-2">Tecnologías: Three.js, GSAP, Shopify Headless.</p>
+                            </div>
+                            <div class="card-footer-stats">
+                                <div class="weakness">
+                                    <small>Plataforma</small>
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="resistance">
+                                    <small>Estado</small>
+                                    <span class="badge bg-primary">New</span>
+                                </div>
+                                <div class="retreat">
+                                    <a href="#" class="text-light"><i class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-5"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-darker text-center text-lg-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="fw-bold text-gradient mb-3">JUMENTOLANDIA</h4>
+                    <p class="small text-muted">
+                        Monterrey
+                    </p>
+                    <p class="small text-muted">
+                        &copy; 2025 Jumentolandia. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold text-light mb-3">Contacto</h5>
+                    <p class="small text-muted mb-1">hola@jumentolandia.com</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-light mb-3">Legal</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-muted text-decoration-none">Aviso de Privacidad</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
