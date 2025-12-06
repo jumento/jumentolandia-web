@@ -20,6 +20,7 @@
 .text-gradient {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 200%;
     animation: gradientFlow 5s ease infinite;
@@ -42,6 +43,7 @@
 .text-primary-gradient {
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -346,10 +348,7 @@
     color: #f8fafc;
 }
 
-.project-card:hover {
-    /* Hover effect handled by active state mainly, but can add slight lift */
-    /* transform: translateY(-10px) scale(1.02);  Conflicting with swiper scale */
-}
+/* .project-card:hover removed */
 
 .swiper-slide-active .project-card:hover {
     transform: scale(1.15);
@@ -446,4 +445,41 @@
 .card-footer-stats i {
     font-size: 1.2rem;
     margin-top: 4px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 9999 !important;
+    /* Ensure it's above everything */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: none;
+}
+
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--secondary-color);
+    transform: translateY(-5px);
+    color: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }

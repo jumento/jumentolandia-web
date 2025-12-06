@@ -195,6 +195,22 @@ $(document).ready(function () {
         "retina_detect": true
     });
 
+    // Back to Top Button
+    const $backToTop = $('.back-to-top');
+
+    $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 300) {
+            $backToTop.addClass('active');
+        } else {
+            $backToTop.removeClass('active');
+        }
+    });
+
+    $backToTop.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 1200);
+    });
+
     // Initialize Swiper
     const swiper = new Swiper('.projects-slider', {
         slidesPerView: 1,
