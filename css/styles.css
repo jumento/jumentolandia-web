@@ -457,13 +457,16 @@
     background: var(--primary-color);
     color: white;
     border-radius: 50%;
-    display: flex !important;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s ease;
+    opacity: 1;
+    /* Changed from 0 to 1 as JS handles fade */
+    visibility: visible;
+    /* Changed from hidden */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Animate hover effects only, let JS handle opacity */
     z-index: 9999 !important;
     /* Ensure it's above everything */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -471,11 +474,7 @@
     border: none;
 }
 
-.back-to-top.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
+/* .back-to-top.active not used anymore with jQuery fade */
 
 .back-to-top:hover {
     background: var(--secondary-color);

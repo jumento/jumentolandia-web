@@ -200,9 +200,9 @@ $(document).ready(function () {
 
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 300) {
-            $backToTop.addClass('active');
+            $backToTop.fadeIn(3000);
         } else {
-            $backToTop.removeClass('active');
+            $backToTop.fadeOut(3000);
         }
     });
 
